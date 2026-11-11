@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2026.7.3/core.css">
+    <script type="module" src="https://pyscript.net/releases/2026.7.3/core.js"></script>
+
+    <title>ICT Club Candidate Verification</title>
+
+    <style>
+        body {
+            background: linear-gradient(135deg, #06152e, #124b91);
+            color: white;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .box {
+            background: #081b38;
+            border: 2px solid #398cff;
+            border-radius: 20px;
+            padding: 35px;
+            width: 320px;
+            max-width: 100%;
+            text-align: center;
+            box-shadow: 0 0 30px #164e91;
+        }
+
+        .logo {
+            background: #1766bd;
+            border: 3px solid white;
+            border-radius: 50%;
+            width: 65px;
+            height: 65px;
+            line-height: 65px;
+            margin: 0 auto 20px;
+            font-size: 38px;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h1 {
+            font-size: 25px;
+        }
+
+        h1 span {
+            color: #55aaff;
+        }
+
+        p {
+            color: #b4cceb;
+            font-size: 13px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        input {
+            width: 100%;
+            padding: 13px;
+            margin: 8px 0;
+            box-sizing: border-box;
+            border: 1px solid #37649b;
+            border-radius: 8px;
+            background: #102b50;
+            color: white;
+            font-size: 14px;
+        }
+
+        input::placeholder {
+            color: #9bb5d5;
+        }
+
+        button {
+            width: 100%;
+            padding: 14px;
+            margin-top: 15px;
+            background: #e63946;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-weight: bold;
+            letter-spacing: 2px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #ff5360;
+        }
+
+        #result {
+            margin-top: 20px;
+            padding: 12px;
+            background: #102b50;
+            border: 1px solid #37649b;
+            border-radius: 8px;
+            font-size: 13px;
+            overflow-wrap: anywhere;
+        }
+
+        .footer {
+            margin-top: 25px;
+            font-size: 10px;
+            color: #789ac2;
+        }
+
+        /* Navigation Bar */
+        .navbar {
+            margin-top: 20px;
+            padding-top: 15px;
+            border-top: 1px solid #37649b;
+        }
+
+        .navbar a {
+            display: inline-block;
+            color: #9bb5d5;
+            text-decoration: none;
+            margin: 5px;
+            font-size: 11px;
+        }
+
+        .navbar a:hover {
+            color: #55aaff;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="box">
+
+        <div class="logo">4</div>
+
+        <h1>CANDIDATE VERIFICATION</h1>
+
+        <form>
+            <input type="text" id="firstName"
+                placeholder="Enter your first name" required>
+
+            <input type="text" id="lastName"
+                placeholder="Enter your last name" required>
+
+            <button type="button" py-click="view_user">
+                ENTER THE SYSTEM
+            </button>
+        </form>
+
+        <div id="result">Your result will appear here.</div>
+
+        <div class="footer">
+            2026 ICT Club &#9830; Seatwork 1 &#9830; 2nd Quarter
+        </div>
+
+        <!-- Navigation Bar -->
+        <div class="navbar">
+            <a href="index.html">Home</a>
+            <a href="skills_test.html">Skills Test</a>
+            <a href="drill2.html">Drill 2</a>
+            <a href="meet_the_creator.html">Meet the Creator</a>
+        </div>
+
+    </div>
+
+    <script type="py" src="seatwork1.py"></script>
+
+</body>
+</html>
