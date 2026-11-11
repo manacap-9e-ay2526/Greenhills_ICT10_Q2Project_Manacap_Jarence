@@ -24,6 +24,7 @@ non_metals = {
     "Rn": ("Radon", 86, 222)
 }
 
+
 def search_element(e):
     # Clears the previous result
     document.getElementById("result").innerHTML = " "
